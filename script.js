@@ -42,27 +42,31 @@ return passwordCriteria;
 
 
 
-function generatePassword(length) {
+function generatePassword() {
 
   var result = [];
 var passwordCriteria = getPasswordCriteria()
- if (passwordCriteria.upperCase === true){
-   result.concat(upperalpha)
+ if (passwordCriteria.hasCharacters){
+   result = result.concat(upperalpha)
   console.log(result)
  }
- if (passwordCriteria.lowerCase === true){
-  result.concat(loweralpha)
+ if (passwordCriteria.hasLowerCase){
+  result = result.concat(loweralpha)
  console.log(result)
 }
-if (passwordCriteria.numbers === true){
-  result.concat(numbers)
+if (passwordCriteria.hasNumbers){
+  result = result.concat(number)
  console.log(result)
 }
-if (passwordCriteria.characters === true){
-  result.concat(character)
+if (passwordCriteria.hasCharacters){
+  result = result.concat(character)
  console.log(result)
 }
  
+console.log(result)
+
+var generatedPassword = ""
+
 
 
       // document.getElementById("demo").innerHTML = text;
@@ -77,11 +81,11 @@ generateBtn.addEventListener("click", writePassword);
 generateBtn.addEventListener("click", generatePassword);
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  // var password = generatePassword();
   var passwordText = document.querySelector("#password");
  
   
-  passwordText.value = password;
+  // passwordText.value = password;
 
 
 
