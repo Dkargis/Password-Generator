@@ -85,7 +85,7 @@ return generatedPassword
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-generateBtn.addEventListener("click", generatePassword);
+// generateBtn.addEventListener("click", generatePassword);
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
