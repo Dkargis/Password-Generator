@@ -67,6 +67,13 @@ console.log(result)
 
 var generatedPassword = ""
 
+for (var i = 0; i < passwordCriteria.length; i++){
+  generatedPassword += result[Math.floor(Math.random() * result.length)]
+console.log (generatedPassword)
+}
+
+return generatedPassword
+
 
 
       // document.getElementById("demo").innerHTML = text;
