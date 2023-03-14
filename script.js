@@ -74,13 +74,6 @@ console.log (generatedPassword)
 
 return generatedPassword
 
-
-
-      // document.getElementById("demo").innerHTML = text;
-    //   let result = ' ';
-    // var length = (9)
-    // const charactersLength = characters.length;
-
     }
 
 // Add event listener to generate button
