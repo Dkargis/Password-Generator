@@ -46,7 +46,7 @@ function generatePassword() {
 
   var result = [];
 var passwordCriteria = getPasswordCriteria()
- if (passwordCriteria.hasCharacters){
+ if (passwordCriteria.hasUpperCase){
    result = result.concat(upperalpha)
   console.log(result)
  }
